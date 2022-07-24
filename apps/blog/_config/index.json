@@ -1,7 +1,7 @@
 {
-  "blogName": "ghpags",
-  "blogDescription": "this is gh pages example",
-  "blogRepo": "hyesungoh/comet-land-pages-example",
+  "blogName": "gh pages",
+  "blogDescription": "This is comet-land gh pages example blog",
+  "blogRepo": "hyesungoh/comet-land-github-pages-example",
   "blogUrl": "https://comet-land-blog.vercel.app",
   "resumeUrl": "https://comet-land-resume.vercel.app"
 }

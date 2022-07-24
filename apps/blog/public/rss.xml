@@ -6,10 +6,10 @@
     version="2.0"
   >
     <channel>
-        <title><![CDATA[ghpags]]></title>
+        <title><![CDATA[gh pages]]></title>
         <link>https://comet-land-blog.vercel.app</link>
         <description>
-          <![CDATA[this is gh pages example]]>
+          <![CDATA[This is comet-land gh pages example blog]]>
         </description>
         <language>en</language>
         <lastBuildDate>2022-03-26</lastBuildDate>
