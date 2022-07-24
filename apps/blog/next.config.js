@@ -5,6 +5,7 @@ const CompressionPlugin = require('compression-webpack-plugin');
 const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js'],
+  basePath: '/comet-land-github-pages-example'
 };
 
 module.exports = withTM({
