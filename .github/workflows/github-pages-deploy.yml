@@ -2,9 +2,11 @@ name: github pages deploy
 
 on:
   push:
-    branches: [master]
+    branches: 
+      main
   pull_request:
-    branches: [master]
+    branches: 
+      main
 
 jobs:
   build:
@@ -26,13 +28,12 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Build my App
-        run: yarn build
-
-      - run: yarn run export:blog
+      - name: Export blog app
+        run: npm run export:blog
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.5.9
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          FOLDER: apps/blog/out
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: out # The folder the action should deploy.
