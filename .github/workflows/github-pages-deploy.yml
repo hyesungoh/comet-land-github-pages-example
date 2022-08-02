@@ -30,16 +30,16 @@ jobs:
         run: yarn
 
       - name: Export app
-        run: npm run export:$TYPE_OF_APP
+        run: npm run export:${{ env.TYPE_OF_APP }}
         env:
           NEXT_PUBLIC_BASE_PATH: /comet-land-github-pages-example
 
       - name: Add .nojekyll file
-        run: touch apps/$TYPE_OF_APP/out/.nojekyll
+        run: touch apps/${{ env.TYPE_OF_APP }}/out/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: apps/$TYPE_OF_APP/out
+          FOLDER: apps/${{ env.TYPE_OF_APP }}/out
