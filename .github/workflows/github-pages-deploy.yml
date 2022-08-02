@@ -31,6 +31,9 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: /comet-land-github-pages-example
 
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
